@@ -1,0 +1,45 @@
+# WordPress core files (они будут из Docker образа)
+# /wp-admin/
+# /wp-includes/
+# /index.php
+# /license.txt
+# /readme.html
+# /wp-activate.php
+# /wp-blog-header.php
+# /wp-comments-post.php
+# /wp-config-sample.php # Мы будем использовать переменные окружения
+# /wp-cron.php
+# /wp-links-opml.php
+# /wp-load.php
+# /wp-login.php
+# /wp-mail.php
+# /wp-settings.php
+# /wp-signup.php
+# /wp-trackback.php
+# /xmlrpc.php
+
+# Исключаем wp-config.php, он будет генерироваться или управляться переменными окружения
+wp-config.php
+
+# Исключаем папку uploads из wp-content, она будет на постоянном диске
+wp-content/uploads/
+
+# Исключаем другие специфичные для WordPress временные файлы или кэш
+wp-content/cache/
+wp-content/backups/
+wp-content/upgrade/
+wp-content/wphb-cache/
+wp-content/wflogs/
+wp-content/aios/
+wp-content/et-cache/
+wp-content/debug.log
+sitemap.xml
+sitemap.xml.gz
+
+# Файлы операционной системы
+.DS_Store
+Thumbs.db
+
+# Файлы IDE
+.idea/
+.vscode/
